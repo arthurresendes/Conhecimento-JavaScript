@@ -5,8 +5,10 @@ variavel1 = parseInt(variavel1)
 variavel2 = parseFloat(variavel2)
 result = parseFloat(variavel1+variavel2)
 
-document.write(result)
-
+document.write('<h1> Soma: ', result, '<h1/>')
+document.write('<br/><hr/>')
+result = (variavel1.toString() + variavel2.toString())
+document.write('<h1> Concatenação: ', result, '<h1/>')
 
 /*
 Casting seria converter as variaveis para algum tipo, exemplo:
