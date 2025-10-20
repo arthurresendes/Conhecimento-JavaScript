@@ -1,19 +1,19 @@
 var a = 10
 var b = 20
 var c = null
-document.write(a)
+document.write('A: ', a, '<br/>')
 document.write("\n")
-document.write(b)
+document.write('B: ', b, '<br/>')
 document.write("\n")
-document.write(c)
+document.write('C: ', c, '<br/>')
 
 c = a
 a = b
 b = c
 document.write("\n")
-document.write(a)
+document.write('A: ', a, '<br/>')
 document.write("\n")
-document.write(b)
+document.write('B: ', b, '<br/>')
 document.write("\n")
 c = null
-document.write(c)
+document.write('C: ', c, '<br/>')
