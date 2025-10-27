@@ -10,6 +10,7 @@ document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é: ' + (num
 document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 / num2) + '<br />')
 document.write('O módulo entre ' + num1 + ' e ' + num2 + ' é: ' + (num1 % num2) + '<br />')
 document.write('O incremento de ' + num1 + ' é: ' + (++num1) + '<br />')
+document.write('O incremento pos ' + num1 + ' é: ' + (num1++) + '<br />')
 document.write(num1 + '<br />')
 document.write('O decremento de ' + num1 + ' é: ' + (--num1) + '<br />')
 document.write(num1)
