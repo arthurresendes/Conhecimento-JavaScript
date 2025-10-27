@@ -8,9 +8,9 @@ function calcula_media(nota1, nota2, nota3) {
 
 function resultado(media, materia) {
     if (media >= 6.0) {
-        document.write("Você passou na materia de " + materia + " com a media de: ", + media)
+        return "Você passou na matéria de " + materia + " com a média de: " + media.toFixed(2);
     } else {
-        document.write("Você não passou na materia de " + materia + " com a media de: ", + media)
+        return "Você não passou na matéria de " + materia + " com a média de: " + media.toFixed(2);
     }
 }
 
@@ -45,5 +45,6 @@ do {
 var materia = prompt("Notas marcadas , qual materia dessas notas: ")
 
 calculando = calcula_media(nota1, nota2, nota3)
+var mensagem = resultado(calculando, materia);
 
-document.write(`<h1>  ${resultado(calculando, materia)} </h1>`)
+document.write(`<h1>  ${mensagem} </h1>`)
