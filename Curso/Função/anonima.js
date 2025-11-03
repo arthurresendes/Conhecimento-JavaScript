@@ -1,5 +1,5 @@
-var exibirSaudacao = function() {
-    document.write('Ola, bem-vindo')
+var exibirSaudacao = function(nome) {
+    document.write(`Ola, ${nome} ,bem-vindo`)
 }
 
-exibirSaudacao()
+exibirSaudacao('Arthur')
