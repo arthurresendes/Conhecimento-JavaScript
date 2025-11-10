@@ -1,0 +1,8 @@
+var nome_id = document.getElementById('nome_usuario')
+console.log(nome_id)
+var nome_tag = document.getElementsByTagName('input')
+console.log(nome_tag)
+var nome_class_name = document.getElementsByClassName('campo_texto')
+console.log(nome_class_name)
+var nome_name = document.getElementsByName('nome')
+console.log(nome_name)
