@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouse</title>
     <script src="mouse.js"></script>
 </head>
+
 <body>
-    
+    <!-- Para apenas um clique chama a função acao que vem do mouse.js-->
+    <div onclick=acao() style="background-color: #ccc;height: 150px;width: 150px;"></div>
+
+    <!-- Para dois cliques sequenciais chama a função acao que vem do mouse.js-->
+    <br><br>
+    <div ondblclick=acao() style="background-color: blue;height: 150px;width: 150px;"></div>
+
+    <!-- Para um clique chama a função acao que vem do mouse.js-->
+    <br><br>
+    <div onmouseup=acao() style="background-color: green;height: 150px;width: 150px;"></div>
+
+    <!-- Quando passar o mouse em cima chama a função acao que vem do mouse.js-->
+    <br><br>
+    <div onmouseover=acao() style="background-color: yellow;height: 150px;width: 150px;"></div>
+
+    <!-- Quando passar o mouse em cima e sair do bloco ele chama a função acao que vem do mouse.js-->
+    <br><br>
+    <div onmouseout=acao() style="background-color: red;height: 150px;width: 150px;"></div>
+
+    <!-- Quando passar o mouse em cima e sair do bloco ele chama a função acao que vem do mouse.js-->
+    <br><br>
+    <div onmouseout="acao2()" onclick="acao1()" style="background-color: orange;height: 150px;width: 150px;"></div>
 </body>
+
 </html>
