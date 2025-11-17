@@ -11,4 +11,16 @@ for(let i = 0; i < lista_frutas.length; i++){
 document.write('<hr>')
 document.write('<h1>Nomes lista: </h1>')
 var lista_nomes = Array('Arthur', 'Jose', 'Maria')
+
+// Adiciona no final
+lista_nomes.push('Carlos')
+
+// Adiciona no inicio
+lista_nomes.unshift('Gabriel')
+
+// Remove do final
+lista_nomes.pop()
+
+// Remove do inicio
+lista_nomes.shift()
 document.write(lista_nomes)
