@@ -9,6 +9,6 @@ for(let i = 0; i < lista_frutas.length; i++){
 }
 
 document.write('<hr>')
-document.write('<h1>Nomes lista frutas: </h1>')
+document.write('<h1>Nomes lista: </h1>')
 var lista_nomes = Array('Arthur', 'Jose', 'Maria')
 document.write(lista_nomes)
