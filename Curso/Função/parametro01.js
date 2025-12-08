@@ -1,5 +1,12 @@
-function soma(a,b){
-    return a + b
+function soma() {
+    var resultado = ' '
+    for (var i in arguments) {
+       // console.log(arguments[i]) //retorna um array com parametros das funções
+        resultado += arguments[i]
+    }
+    return resultado
 }
 
-document.write(soma(5,5))
+document.write(soma(7, 5, 3.2, 'Texto',true))
+
+// Retorna uma concatenação de tudo ficando '753.2Textotrue'
