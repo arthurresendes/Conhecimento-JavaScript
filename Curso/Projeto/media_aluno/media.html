@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo_media.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <label for="nota1">Nota 1: </label>
-    <input type="text" name="nota1" id="nota1"><br><br>
-    <label for="nota2">Nota 2: </label>
-    <input type="text" name="nota2" id="nota2"><br><br>
-    <label for="nota3">Nota 3: </label>
-    <input type="text" name="nota3" id="nota3"><br><br>
-    <input type="submit" value="Enviar" onclick="calcularMedia()"><br><br>
-    <p id="result"></p>
+    <div class="apresentacao">
+        <h1>Bem-Vindo ao calculo de média</h1>
+        <h3>Aqui digite as suas 3 notas e retornamos sua média de forma dinamica</h3>
+    </div>
+    <div id="principal">
+        <label for="nota1">Nota 1: </label>
+        <input type="text" name="nota1" id="nota1"><br><br>
+        <label for="nota2">Nota 2: </label>
+        <input type="text" name="nota2" id="nota2"><br><br>
+        <label for="nota3">Nota 3: </label>
+        <input type="text" name="nota3" id="nota3"><br><br>
+        <input type="submit" id="env" value="Enviar" onclick="calcularMedia()"><br><br>
+        <p id="result"></p>
+    </div>
 
     <script src="media.js"></script>
 </body>
