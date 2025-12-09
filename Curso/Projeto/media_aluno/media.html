@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media</title>
-    
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <form action="" method="post">
-        <label for="media1">Media 1: </label>
-        <input type="text" name="media1" id="media1"><br><br>
-        <label for="media2">Media 2: </label>
-        <input type="text" name="media2" id="media2"><br><br>
-        <label for="media3">Media 3: </label>
-        <input type="text" name="media3" id="media3"><br><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+    <label for="nota1">Nota 1: </label>
+    <input type="text" name="nota1" id="nota1"><br><br>
+    <label for="nota2">Nota 2: </label>
+    <input type="text" name="nota2" id="nota2"><br><br>
+    <label for="nota3">Nota 3: </label>
+    <input type="text" name="nota3" id="nota3"><br><br>
+    <input type="submit" value="Enviar" onclick="calcularMedia()"><br><br>
+    <p id="result"></p>
 
     <script src="media.js"></script>
 </body>
+
 </html>
