@@ -1,4 +1,28 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+        background-color: #EDF1FE;
 }
 
+section{
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7%;
+    padding:40px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.329);
+    background-color: #FFF;
+}
+
+
+.estilo{
+    border: 1px solid black;
+    border-radius: 8%;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.226);
+}
+
+
+input[type="submit"]{
+    background-image: linear-gradient(90deg, rgb(57, 150, 173),rgb(12, 45, 83));
+    color: #EDF1FE;
+    font-weight: bolder;
+}
