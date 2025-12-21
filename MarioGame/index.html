@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onresize="ajustaTela()">
-    
+    <script>
+        var numLoop = Math.floor(Math.random() * 20)
+        var contador = 0
+
+        var intervalo = setInterval(function(){
+            posicaoRandomica()
+            contador++
+
+            if(contador >= numLoop){
+                clearInterval(intervalo)
+                document.getElementById('mario').remove()
+
+                resTotalElementos()
+                
+            }
+        }, 1000)
+
+
+    </script>
 </body>
 </html>
