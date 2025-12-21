@@ -1,5 +1,7 @@
 var largura = 0
 var altura = 0
+var totalMarios = 0
+var nivelSelecionado = ''
 
 function ajustaTela() {
     altura = window.innerHeight
@@ -86,23 +88,94 @@ function resTotalElementos() {
     feedback.id = 'feedback'
 
     validar.onclick = function () {
-        mostrarResposta()
+        var valor = Number(document.getElementById('totalMario').value)
+
+        if (valor === totalMarios) {
+            document.getElementById('feedback').innerText = 'Acertou, o Mario não esta atras do Armario'
+        } else {
+            document.getElementById('feedback').innerText =
+                `Errou! O correto era ${totalMarios}. O Mario está atras do armario...`
+        }
+
+        setTimeout(function () {
+            console.log('Retornando a pagina inicial')
+            window.location.reload()
+        }, 2000)
     }
 
     container.appendChild(pergunta)
     container.appendChild(resposta)
     container.appendChild(validar)
     container.appendChild(feedback)
-
 }
 
-function mostrarResposta() {
-    var valor = Number(document.getElementById('totalMario').value)
+function inicioJogo() {
+    const selectNivel = document.getElementById('nivel');
+    nivelSelecionado = selectNivel.value;
 
-    if (valor === totalMarios) {
-        document.getElementById('feedback').innerText = 'Acertou, o Mario não esta atras do Armario'
-    } else {
-        document.getElementById('feedback').innerText =
-            `Errou! O correto era ${totalMarios}. O Mario está atras do armario...`
+    console.log(nivelSelecionado)
+    var label = document.getElementById('nivelabel')
+    var select = document.getElementById('nivel')
+    var inicio = document.getElementById('comeca')
+
+    label.remove()
+    select.remove()
+    inicio.remove()
+
+
+
+    if (nivelSelecionado === "n1") {
+        var numLoop = Math.floor(Math.random() * 10) + 1
+        totalMarios = -1
+
+        var intervalo = setInterval(function () {
+            posicaoRandomica()
+            totalMarios++
+
+            if (totalMarios >= numLoop) {
+                clearInterval(intervalo)
+                var mario = document.getElementById('mario')
+                if (mario) {
+                    mario.remove()
+                }
+                resTotalElementos()
+            }
+        }, 1000)
+    }
+    else if (nivelSelecionado === "n2") {
+        var numLoop = Math.floor(Math.random() * 25) + 1
+        totalMarios = 0
+
+        var intervalo = setInterval(function () {
+            posicaoRandomica()
+            totalMarios++
+
+            if (totalMarios >= numLoop) {
+                clearInterval(intervalo)
+                var mario = document.getElementById('mario')
+                if (mario) {
+                    mario.remove()
+                }
+                resTotalElementos()
+            }
+        }, 500)
+    }
+    else if (nivelSelecionado === "n3") {
+        var numLoop = Math.floor(Math.random() * 50) + 1
+        totalMarios = 0
+
+        var intervalo = setInterval(function () {
+            posicaoRandomica()
+            totalMarios++
+
+            if (totalMarios >= numLoop) {
+                clearInterval(intervalo)
+                var mario = document.getElementById('mario')
+                if (mario) {
+                    mario.remove()
+                }
+                resTotalElementos()
+            }
+        }, 250)
     }
 }

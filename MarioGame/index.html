@@ -11,24 +11,14 @@
 </head>
 
 <body onresize="ajustaTela()">
-    <script>
-        var numLoop = Math.floor(Math.random() * 20)
-        var totalMarios = 0
 
-        var intervalo = setInterval(function () {
-            posicaoRandomica()
-            totalMarios++
-
-            if (totalMarios >= numLoop) {
-                clearInterval(intervalo)
-                var mario = document.getElementById('mario')
-                if (mario) {
-                    mario.remove()
-                }
-                resTotalElementos()
-            }
-        }, 500)
-    </script>
+    <label for="nivel" id="nivelabel">Escolha seu nivel:</label>
+    <select id="nivel" name="niveis">
+        <option value="n1">Facil</option>
+        <option value="n2">Medio</option>
+        <option value="n3">Dificil</option>
+    </select>
+    <input type="submit" value="Começar" id="comeca" onclick="inicioJogo()">
 </body>
 
 </html>
