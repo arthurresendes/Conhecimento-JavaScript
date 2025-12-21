@@ -12,7 +12,6 @@ ajustaTamanho()
 
 function posicaoRandomica(){
 
-
     if(document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
     }
