@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +9,26 @@
     <link rel="shortcut icon" href="Mario.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body onresize="ajustaTela()">
     <script>
         var numLoop = Math.floor(Math.random() * 20)
-        var contador = 0
+        var totalMarios = 0
 
-        var intervalo = setInterval(function(){
+        var intervalo = setInterval(function () {
             posicaoRandomica()
-            contador++
+            totalMarios++
 
-            if(contador >= numLoop){
+            if (totalMarios >= numLoop) {
                 clearInterval(intervalo)
-                document.getElementById('mario').remove()
-
+                var mario = document.getElementById('mario')
+                if (mario) {
+                    mario.remove()
+                }
                 resTotalElementos()
-                
             }
-        }, 1000)
-
-
+        }, 500)
     </script>
 </body>
+
 </html>
