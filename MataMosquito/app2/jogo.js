@@ -12,8 +12,8 @@ ajustaTamanho()
 
 function posicaoRandomica(){
 
-    if(document.getElementById('mosquito')){
-        document.getElementById('mosquito').remove()
+    if(document.getElementById('mosca')){
+        document.getElementById('mosca').remove()
     }
 
     var posicaoX = Math.floor(Math.random() * largura) - 90
@@ -28,7 +28,7 @@ function posicaoRandomica(){
     mosca.style.left = posicaoX + 'px'
     mosca.style.top = posicaoY + 'px'
     mosca.style.position = 'absolute'
-    mosca.id = 'mosquito'
+    mosca.id = 'mosca'
 
     document.body.appendChild(mosca)
 
