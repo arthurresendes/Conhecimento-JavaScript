@@ -11,13 +11,16 @@ function ajustaTamanho(){
 ajustaTamanho()
 
 function posicaoRandomica(){
+
+
+    if(document.getElementById('mosquito')){
+        document.getElementById('mosquito').remove()
+    }
+
     var posicaoX = Math.floor(Math.random() * largura) - 90
     var posicaoY = Math.floor(Math.random() * altura) - 90
-
     posicaoX = posicaoX < 0 ? 0 : posicaoX
     posicaoY = posicaoY < 0 ? 0 : posicaoY
-
-
     console.log(posicaoX,posicaoY)
 
     var mosca = document.createElement('img')
@@ -26,6 +29,7 @@ function posicaoRandomica(){
     mosca.style.left = posicaoX + 'px'
     mosca.style.top = posicaoY + 'px'
     mosca.style.position = 'absolute'
+    mosca.id = 'mosquito'
 
     document.body.appendChild(mosca)
 
