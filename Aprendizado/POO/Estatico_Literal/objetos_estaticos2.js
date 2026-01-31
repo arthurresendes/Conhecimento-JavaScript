@@ -36,3 +36,11 @@ console.log(objeto2.idade)
 console.log(objeto2.sexo)
 console.log(objeto2.profissao)
 objeto2.exibirResumo()
+
+console.log("==========")
+console.log("Mudando informações")
+
+objeto2.nome = 'Josias'
+objeto2.idade = 22
+console.log(objeto2.nome)
+console.log(objeto2.idade)
