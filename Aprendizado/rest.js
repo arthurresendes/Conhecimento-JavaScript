@@ -1,8 +1,9 @@
-const frutas = ['maca', 'banana'];
-const todasFrutas = [...frutas, 'laranja', 'uva']; 
-console.log(todasFrutas)
-// maçã,banana,laranja,etc
+function somarTudo(...numeros) {
+  return numeros.reduce((total, atual) => total + atual, 0);
+}
+console.log(somarTudo(1, 2, 3, 4)); // Resultado: 10
 
-const usuario = { nome: 'Ana', idade: 25 };
-const usuarioAtualizado = { ...usuario, cidade: 'São Paulo' };
-console.log(usuarioAtualizado)
+const [primeiro, ...resto] = [10, 20, 30, 40];
+// primeiro = 10, resto = [20, 30, 40]
+
+
