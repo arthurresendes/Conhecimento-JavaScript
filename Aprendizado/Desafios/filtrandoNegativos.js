@@ -9,4 +9,4 @@ function negatives(arrayNumber){
     return newList
 }
 
-console.log(negatives([1,2,3-2,3,1,-3]))
+console.log(negatives([1,2,3,-2,3,1,-3]))
