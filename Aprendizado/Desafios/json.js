@@ -7,4 +7,4 @@ const Pessoa = {
 console.log(Pessoa)
 console.log(Pessoa["nome"])
 console.log(Pessoa["idade"])
-console.log(Pessoa["profissão"])
+console.log(Pessoa["profissao"])
